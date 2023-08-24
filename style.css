@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(202, 244, 202);
+}
+
+#panel {
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#ptop {
+  padding: 0 30%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(74, 127, 74);
+  color: #fff;
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.elem h2 {
+  font-weight: 500;
+  font-size: 21px;
+}
+.box {
+  color: rgb(20, 77, 20);
+  font-weight: 600;
+  font-size: 25px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#pbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(
+    100% - 100px
+  ); /* make sure to give space between values and operator while using calc()*/
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(48, 97, 50);
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.bubble:hover {
+  cursor: pointer;
+  background-color: rgb(33, 77, 35);
+}
